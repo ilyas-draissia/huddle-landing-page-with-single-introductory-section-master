@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+:root {
+  --ff-primary: system-ui, sans-serif;
+
+  @each $key, $value in $font-sizes {
+    --fs-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $font-weights {
+    --fw-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $colors {
+    --clr-#{$key}: #{$value};
+  }
+}
+:root {
+  --space-3xs: clamp(0.3125rem, 0.2898rem + 0.1136vw, 0.375rem);
+  --space-2xs: clamp(0.5625rem, 0.4943rem + 0.3409vw, 0.75rem);
+  --space-xs: clamp(0.875rem, 0.7841rem + 0.4545vw, 1.125rem);
+  --space-s: clamp(1.125rem, 0.9886rem + 0.6818vw, 1.5rem);
+  --space-m: clamp(1.6875rem, 1.483rem + 1.0227vw, 2.25rem);
+  --space-l: clamp(2.25rem, 1.9773rem + 1.3636vw, 3rem);
+  --space-xl: clamp(3.375rem, 2.9659rem + 2.0455vw, 4.5rem);
+  --space-2xl: clamp(4.5rem, 3.9545rem + 2.7273vw, 6rem);
+  --space-3xl: clamp(6.75rem, 5.9318rem + 4.0909vw, 9rem);
+  --step--1: clamp(1rem, 0.9273rem + 0.3636vw, 1.2rem);
+  --step-0: clamp(1.125rem, 0.9886rem + 0.6818vw, 1.5rem);
+  --step-1: clamp(1.2656rem, 1.044rem + 1.108vw, 1.875rem);
+  --step-2: clamp(1.4238rem, 1.0893rem + 1.6726vw, 2.3438rem);
+  --step-3: clamp(1.6018rem, 1.1189rem + 2.4143vw, 2.9297rem);
+  --step-4: clamp(1.802rem, 1.1256rem + 3.382vw, 3.6621rem);
+  --step-5: clamp(2.0273rem, 1.0999rem + 4.637vw, 4.5776rem);
+}

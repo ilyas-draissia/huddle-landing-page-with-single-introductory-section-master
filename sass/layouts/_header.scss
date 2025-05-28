@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as * ;
+ .header{
+     height: 7rem;
+     .container{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    &__logo{
+        width: 1.8rem;
+        aspect-ratio: 1; 
+    }
+    &__word{
+        font-size: map-get($font-sizes, "700");
+        font-weight: map-get($font-weights,"bold");
+    }
+}

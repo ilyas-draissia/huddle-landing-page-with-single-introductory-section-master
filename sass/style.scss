@@ -1,0 +1,61 @@
+@use "index";
+@use '../sass/abstracts/variables' as *;
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #674bb1;
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100dvh;
+}
+.container{
+    padding-inline: var(--space-m);
+    height: 100%;
+}
+
+@media screen and (max-width:map-get($breakpoints,lg)){
+        .container{
+            padding-inline: var(--space-l);
+        }
+}
+@media screen and (max-width:map-get($breakpoints,md)){
+    .main .container{
+        padding: var(--space-l);
+    }
+    .header{
+        height:6.5rem;
+    }
+    body{
+        background-image: url(/images/bg-mobile.svg);
+    }
+    .main{
+        .container{
+            display: flex;
+            flex-direction: column;
+            
+        }&__info{
+                align-items: center;
+                text-align: center;
+                gap: var(--space-m);
+                padding: 2rem 0;
+            }
+}
+.footer{
+    height: 5rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.link{
+    width: 2rem;}
+}
+.info__button{
+    padding: 1rem 5rem;
+    font-size: var(--step-2);
+    font-weight: map-get($font-weights,"bold");
+}
+}
+

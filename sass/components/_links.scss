@@ -1,0 +1,12 @@
+
+.info__links{
+    display: flex;
+    gap:1rem ;
+    .link{
+        width: 1.8rem;
+        filter: invert(97%) sepia(21%) saturate(21%) hue-rotate(24deg) brightness(105%) contrast(100%);
+    }
+    .link:hover{
+        filter: invert(46%) sepia(54%) saturate(2509%) hue-rotate(287deg) brightness(100%) contrast(90%);
+    }
+}

@@ -1,0 +1,312 @@
+/**
+ * Use Utopia to generate responsive font sizes
+ * @link https://utopia.fyi/type/calculator
+ */
+:root {
+  --ff-primary: system-ui, sans-serif;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.5rem;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --clr-text: #eee;
+  --clr-background: #1e232c;
+  --clr-primary: #2f343d;
+  --clr-secondary: #404a5a;
+  --clr-accent: #00f3f3;
+}
+
+:root {
+  --space-3xs: clamp(0.3125rem, 0.2898rem + 0.1136vw, 0.375rem);
+  --space-2xs: clamp(0.5625rem, 0.4943rem + 0.3409vw, 0.75rem);
+  --space-xs: clamp(0.875rem, 0.7841rem + 0.4545vw, 1.125rem);
+  --space-s: clamp(1.125rem, 0.9886rem + 0.6818vw, 1.5rem);
+  --space-m: clamp(1.6875rem, 1.483rem + 1.0227vw, 2.25rem);
+  --space-l: clamp(2.25rem, 1.9773rem + 1.3636vw, 3rem);
+  --space-xl: clamp(3.375rem, 2.9659rem + 2.0455vw, 4.5rem);
+  --space-2xl: clamp(4.5rem, 3.9545rem + 2.7273vw, 6rem);
+  --space-3xl: clamp(6.75rem, 5.9318rem + 4.0909vw, 9rem);
+  --step--1: clamp(1rem, 0.9273rem + 0.3636vw, 1.2rem);
+  --step-0: clamp(1.125rem, 0.9886rem + 0.6818vw, 1.5rem);
+  --step-1: clamp(1.2656rem, 1.044rem + 1.108vw, 1.875rem);
+  --step-2: clamp(1.4238rem, 1.0893rem + 1.6726vw, 2.3438rem);
+  --step-3: clamp(1.6018rem, 1.1189rem + 2.4143vw, 2.9297rem);
+  --step-4: clamp(1.802rem, 1.1256rem + 3.382vw, 3.6621rem);
+  --step-5: clamp(2.0273rem, 1.0999rem + 4.637vw, 4.5776rem);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html body {
+  -webkit-font-smoothing: antialiased;
+}
+
+*:not(h1, h2, h3) {
+  line-height: 1;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+input, textarea {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+ul[role=list], ol[role=list] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+.header {
+  height: 7rem;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__logo {
+  width: 1.8rem;
+  aspect-ratio: 1;
+}
+.header__word {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer {
+  height: 4.5rem;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.main {
+  flex-grow: 1;
+}
+.main .container {
+  display: flex;
+  height: 100%;
+  gap: 2rem;
+}
+.main__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.main__image {
+  min-width: 58%;
+}
+
+.info__title {
+  font-size: var(--step-2);
+  font-weight: 700;
+}
+
+.info__text {
+  font-size: var(--step-1);
+  font-weight: 300;
+}
+
+.info__links {
+  display: flex;
+  gap: 1rem;
+}
+.info__links .link {
+  width: 1.8rem;
+  filter: invert(97%) sepia(21%) saturate(21%) hue-rotate(24deg) brightness(105%) contrast(100%);
+}
+.info__links .link:hover {
+  filter: invert(46%) sepia(54%) saturate(2509%) hue-rotate(287deg) brightness(100%) contrast(90%);
+}
+
+.main__image {
+  display: flex;
+  align-items: center;
+}
+.main__image img {
+  margin-inline: auto;
+}
+
+.info__button {
+  padding: 1rem 4rem;
+  width: fit-content;
+  border-radius: 25px;
+  box-shadow: 50px;
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+  color: #674bb1;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.info__button:hover {
+  color: #ffffff;
+  background-color: #F152C9;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #674bb1;
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100dvh;
+}
+
+.container {
+  padding-inline: var(--space-m);
+  height: 100%;
+}
+
+@media screen and (max-width: 75em) {
+  .container {
+    padding-inline: var(--space-l);
+  }
+}
+@media screen and (max-width: 50em) {
+  .main .container {
+    padding: var(--space-l);
+  }
+  .header {
+    height: 6.5rem;
+  }
+  body {
+    background-image: url(/images/bg-mobile.svg);
+  }
+  .main .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__info {
+    align-items: center;
+    text-align: center;
+    gap: var(--space-m);
+    padding: 2rem 0;
+  }
+  .footer {
+    height: 5rem;
+  }
+  .footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .link {
+    width: 2rem;
+  }
+  .info__button {
+    padding: 1rem 5rem;
+    font-size: var(--step-2);
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=style.css.map */

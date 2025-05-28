@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+.info__button{
+    padding: 1rem 4rem;
+    width: fit-content;
+    border-radius: 25px;
+    box-shadow: 50px;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+    color: #674bb1;
+    font-size: map-get($font-sizes, "600");
+    font-weight: map-get($font-weights,"regular");
+}
+.info__button:hover{
+    color: #ffffff;
+    background-color: #F152C9;
+}
