@@ -1,4 +1,3 @@
 sass/
 design/
-dist/*
-!dist/style.css
+dist/
