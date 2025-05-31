@@ -137,12 +137,13 @@ h3 {
 }
 
 .header {
-  height: 7rem;
+  height: 5.5rem;
 }
 .header .container {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  height: 100%;
 }
 .header__logo {
   width: 1.8rem;
@@ -154,21 +155,23 @@ h3 {
 }
 
 .footer {
-  height: 4.5rem;
+  height: 3.5rem;
 }
 .footer .container {
   display: flex;
   align-items: center;
   justify-content: end;
+  height: 100%;
 }
 
 .main {
   flex-grow: 1;
+  display: flex;
 }
 .main .container {
   display: flex;
-  height: 100%;
   gap: 2rem;
+  flex-grow: 1;
 }
 .main__info {
   display: flex;
@@ -177,7 +180,7 @@ h3 {
   justify-content: center;
 }
 .main__image {
-  min-width: 58%;
+  min-width: 555px;
 }
 
 .info__title {
@@ -265,7 +268,6 @@ body {
 
 .container {
   padding-inline: var(--space-m);
-  height: 100%;
 }
 
 @media screen and (max-width: 75em) {
@@ -309,4 +311,4 @@ body {
     font-size: var(--step-2);
     font-weight: 700;
   }
-}/*# sourceMappingURL=style.css.map */
+}
